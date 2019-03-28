@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
     
     var count = 1
-    var pin = 0
+    var track = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,16 +25,16 @@ class ViewController: UIViewController {
 
     @IBAction func buttonPressed(_ sender: Any) {
         
-        if(pin == 0){
+        if(track == 0){
             count+=1
             if(count == 5){
-                pin = 1
+                track = 1
             }
         }
         else {
             count-=1
             if(count == 1){
-                pin = 0
+                track = 0
             }
         }
         // if(count < 5){
