@@ -37,6 +37,10 @@ class ViewController: UIViewController {
                 pin = 0
             }
         }
+        // if(count < 5){
+        // count+=1
+        // }
+        // else {count = 1}
         alienImageViewer.image = UIImage(named: "frame\(count).png")
         countLabel.text = "frame\(count).png"
         print("Button pressed!")
